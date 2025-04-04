@@ -2,7 +2,8 @@
 title: Prologue
 description: An introduction to Polypack.
 lastUpdated: 2025-04-03
-order: 1
+sidebar:
+    order: 1
 ---
 
 # Versioning Scheme

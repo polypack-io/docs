@@ -2,7 +2,8 @@
 title: Requirements
 description: What do I need to run Polypack?
 lastUpdated: 2025-04-03
-order: 2
+sidebar:
+    order: 2
 ---
 
 # Requirements

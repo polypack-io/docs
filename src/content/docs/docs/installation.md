@@ -1,7 +1,9 @@
 ---
 title: Installation
 description: How to install Polypack
-order: 3
+lastUpdated: 2025-04-03
+sidebar:
+    order: 3
 ---
 
 # Platform Specifics
