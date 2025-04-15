@@ -6,7 +6,7 @@ sidebar:
     order: 3
 ---
 
-# Platform Specifics
+# Platform Specifics 
 
 ## Install locally
 
@@ -42,4 +42,36 @@ php artisan queue:listen
 # or if you use Sail:
 sail artisan queue:listen
 ```
-or if you use Sail:
+
+## One Step Install
+
+This quick installation is designed to get you up and running fast, but may not be suitable for high-availability deployments.
+
+### Requirements
+
+* [Docker](https://docs.docker.com/engine/install/)
+* A domain of your choice
+    * Record(s) for the Polypack UI
+    * Record(s) for the Minio Object Storage API
+    * Record(s) for the Minio Object Storage Console UI
+* A valid email address for LetsEncrypt certificate provisioning
+* A non-root user
+
+### Run the setup companion
+You'll need to answer a few questions and the script will automatically update (or create) your .env, and then start the project.
+```sh
+sh setup.sh
+```
+
+If you choose to seed the database with credentials, they are set as follows:
+
+```
+Email: hello@polypack.io
+Password: password
+```
+
+### Restart the deployment
+In the event you want to restart or bring up your instance, you should use the following command.
+```sh
+sh restart.sh
+```
